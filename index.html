@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ativa Film – Insulfilm automotivo, residencial e comercial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#topo">Ativa Film</a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+  <div class="hero" id="topo">
+    <div class="wrap">
+      <h1>Insulfilm bem aplicado, sem bolha e com qualidade.</h1>
+      <p>Aplicamos película em carros, casas e comércios. Menos calor, mais privacidade e proteção contra o sol, com acabamento limpo.</p>
+      <a class="btn" data-link="whatsapp" href="https://wa.me/55DDDNUMERO" rel="noopener">Pedir orçamento no WhatsApp</a>
+      <a class="btn alt" href="#servicos">Ver serviços</a>
+
+      <div class="demo" aria-label="Simulador de escurecimento da película">
+        <div class="scene">
+          <div class="sun"></div><div class="hills"></div>
+          <div class="tint" id="tint"></div>
+          <div class="frame"></div>
+        </div>
+        <div class="ctrl">
+          <label for="range">Arraste para ver como a película muda a luz</label>
+          <input type="range" id="range" min="5" max="70" value="35">
+          <output id="out" for="range">Passa 35% da luz</output>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="servicos">
+  <div class="wrap">
+    <h2>Nossos serviços</h2>
+    <p class="lead">Escolha o tom e a gente indica a película certa para o seu caso, explicando também o que a lei permite em cada vidro do carro.</p>
+    <div class="grid">
+      <div class="card"><h3>Insulfilm automotivo</h3><p>Todos os vidros do carro, com corte preciso e acabamento nas bordas.</p></div>
+      <div class="card"><h3>Residencial</h3><p>Janelas e portas de vidro com menos calor e mais privacidade, sem perder a luz natural.</p></div>
+      <div class="card"><h3>Comercial e predial</h3><p>Fachadas, vitrines e escritórios. Conforto para quem trabalha e economia no ar-condicionado.</p></div>
+      <div class="card"><h3>Remoção e troca</h3><p>Tiramos a película velha, arroxeada ou com bolhas e aplicamos uma nova.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos" class="sem-topo">
+  <div class="wrap">
+    <h2>Nosso trabalho</h2>
+    <p class="lead">Alguns serviços feitos na loja.</p>
+    <div class="photos">
+      <div class="ph">Foto da loja por fora</div>
+      <div class="ph">Foto de um carro aplicado</div>
+      <div class="ph">Foto de uma janela residencial</div>
+      <div class="ph">Foto da equipe trabalhando</div>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" class="sem-topo">
+  <div class="wrap">
+    <h2>O que os clientes dizem</h2>
+    <p class="lead">Avaliações de clientes no Google Maps.</p>
+
+    <!-- Resumo da nota (preenchido pelo script.js, veja GOOGLE_RESUMO) -->
+    <p class="resumo" id="reviews-summary" hidden></p>
+
+    <!-- Cards das avaliações (preenchidos pelo script.js, veja AVALIACOES) -->
+    <div class="grid" id="reviews-list"></div>
+
+    <noscript><p class="lead">Ative o JavaScript para ver as avaliações ou veja todas direto no Google Maps.</p></noscript>
+
+    <p class="reviews-more">
+      <a class="btn alt-red" data-link="maps" href="https://maps.app.goo.gl/y95nfSeeVAiQgsve9" rel="noopener">Ver todas as avaliações no Google</a>
+    </p>
+  </div>
+</section>
+
+<section id="contato" class="sem-topo">
+  <div class="wrap">
+    <h2>Onde estamos</h2>
+    <p class="lead">Pode passar na loja ou chamar no WhatsApp.</p>
+    <div class="info">
+      <div>
+        <h3>Endereço</h3>
+        <p>Rua Pedro Escobar, 60 - Jardim Eliana<br>São Paulo – SP</p>
+        <p><a data-link="maps" href="https://maps.app.goo.gl/y95nfSeeVAiQgsve9" rel="noopener">Abrir no Google Maps</a></p>
+      </div>
+      <div>
+        <h3>Horário</h3>
+        <table>
+          <tr><td>Segunda a sábado</td><td>9h às 18h</td></tr>
+          <tr><td>Domingo</td><td>Fechado</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>WhatsApp: <a data-link="whatsapp" href="https://wa.me/55DDDNUMERO" rel="noopener">([DDD]) [número]</a></p>
+        <p>Instagram: <a data-link="instagram" href="#" rel="noopener">@[usuario]</a></p>
+        <p>Facebook: <a data-link="facebook" href="#" rel="noopener">[página]</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="btn zap" data-link="whatsapp" href="https://wa.me/55DDDNUMERO" rel="noopener">WhatsApp</a>
+
+<footer>
+  <div class="wrap">© 2026 Ativa Film. Todos os direitos reservados.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- code by agt_eve, money is my motivation, if you want to work with me, contact me on Instagram @agt_eve -->
